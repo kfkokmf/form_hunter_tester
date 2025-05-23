@@ -3,17 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newsletter</title>
+  <title>StyleHub - Moda Contemporânea</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <h1>Subscreve a nossa newsletter</h1>
-  <form id="newsletter-form">
-    <input type="email" id="email" placeholder="Teu e-mail" required />
-    <button type="submit">Subscrever</button>
-  </form>
-  <p id="mensagem"></p>
+  <header>
+    <nav>
+      <div class="logo">StyleHub</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#colecao">Coleção</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Firebase SDKs -->
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Descobre o Teu Estilo</h1>
+        <p>Coleção Outono/Inverno 2024</p>
+        <a href="#colecao" class="cta-button">Ver Coleção</a>
+      </div>
+    </section>
+
+    <section id="destaques">
+      <h2>Destaques da Temporada</h2>
+      <div class="produtos-grid">
+        <div class="produto">
+          <img src="https://via.placeholder.com/300x400" alt="Vestido Elegante">
+          <h3>Vestido Elegante</h3>
+          <p>€89.99</p>
+          <button class="comprar-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+          <img src="https://via.placeholder.com/300x400" alt="Casaco Moderno">
+          <h3>Casaco Moderno</h3>
+          <p>€129.99</p>
+          <button class="comprar-btn">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+          <img src="https://via.placeholder.com/300x400" alt="Calças Premium">
+          <h3>Calças Premium</h3>
+          <p>€79.99</p>
+          <button class="comprar-btn">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios">
+      <div class="beneficio">
+        <i class="fas fa-truck"></i>
+        <h3>Entrega Grátis</h3>
+        <p>Em compras superiores a €50</p>
+      </div>
+      <div class="beneficio">
+        <i class="fas fa-undo"></i>
+        <h3>Devolução Fácil</h3>
+        <p>30 dias para trocas</p>
+      </div>
+      <div class="beneficio">
+        <i class="fas fa-lock"></i>
+        <h3>Pagamento Seguro</h3>
+        <p>Transações 100% seguras</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>StyleHub</h3>
+        <p>Moda contemporânea para todos os estilos.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Newsletter</h3>
+        <p>Subscreve para receberes as últimas novidades e ofertas exclusivas!</p>
+        <form id="newsletter-form">
+          <input type="email" id="email" placeholder="Teu e-mail" required />
+          <button type="submit">Subscrever</button>
+        </form>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: info@stylehub.pt</p>
+        <p>Tel: +351 123 456 789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 StyleHub. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
   <script type="module" src="script.js"></script>
 </body>
 </html>
